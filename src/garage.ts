@@ -1,7 +1,4 @@
-export function renderGarageView(): HTMLDivElement {
-  const view: HTMLDivElement = document.createElement("div");
-  view.className = "garage-view";
-  view.innerHTML = `
+const GARAGE_TEMPLATE = `
   <div class="garage-controls">
         <div class="control-panel create-panel">
           <input type="text" class="create-name-input" placeholder="Car name" />
@@ -43,5 +40,10 @@ export function renderGarageView(): HTMLDivElement {
         <button type="button" class="btn button-next">Next</button>
       </div>
   `;
+
+export function renderGarageView(): HTMLDivElement {
+  const view: HTMLDivElement = document.createElement("div");
+  view.className = "garage-view";
+  view.innerHTML = GARAGE_TEMPLATE;
   return view;
 }
