@@ -37,7 +37,7 @@ const GARAGE_TEMPLATE = `
       <div class="cars-track-list"></div>
       <div class="pagination">
         <button type="button" class="button button-prev" disabled>Prev</button>
-        <button type="button" class="btn button-next">Next</button>
+        <button type="button" class="button button-next">Next</button>
       </div>
   `;
 
